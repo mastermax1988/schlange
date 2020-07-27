@@ -1,18 +1,18 @@
 package Snake;
 
-public class Koord
+public class Coordinates
 {
     public int x,y,z;
-    public Koord(int x, int y, int z)
+    public Coordinates(int x, int y, int z)
     {
         this.x=x;
         this.y=y;
         this.z=z;
     }
 
-    public  Koord clone()
+    public Coordinates clone()
     {
-        return  new Koord(x,y,z);
+        return  new Coordinates(x,y,z);
     }
     public void step(Direction dir)
     {
